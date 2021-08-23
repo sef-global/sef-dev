@@ -1,19 +1,3 @@
-## Welcome PR details 
-
-- SEF Hive User Name
-<!-- Answer -->
-
-- Introduce yourself thread entry url
-<!-- Answer -->
-
-- How many Pull Requests have you sent to sef-repos? (Check only one)
-  - [ ] This is the first one 
-  - [ ] 2 Including this
-  - [ ] 3 - 4 Including this
-  - [ ] 5 or more Including this 
-
-<!-- No need to fill the rest if this is the welcome PR -->
-
 ## Purpose
 <!--- Describe the problems, issues, or needs driving this feature/fix and include links to related issues -->
 The purpose of this PR is to fix #<issue-number>
