@@ -8,31 +8,59 @@
     <link rel="stylesheet" href="custom-styles.css" />
 </head>
 <body class="bg-custom-dark container px-2 md:px-10 mx-auto text-white">
-    <div class="flex flex-1 py-3 md:mt-5 md:mx-20 items-center justify-between">
-        <div class="flex-initial">
-            <p class="font-medium text-lg">DevTeam</p>
-            <p class="text-gray-400 text-sm">Sustainable Education Foundation</p>
+    <nav>
+        <div class="flex flex-1 py-3 md:mt-5 md:mx-20 items-center justify-between">
+    
+            <div class="flex-initial">
+                <p class="font-medium text-lg">DevTeam</p>
+                <p class="text-gray-400 text-sm">Sustainable Education Foundation</p>
+            </div>
+            <div class=" sm:hidden">
+                <!-- Mobile menu button-->
+                <button type="button" class=" float-right text-gray-400 navbar-toggler d-block d-sm-none" data-toggle="collapse" data-target="#navbarMenu" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <a href="javascript:void(0);" class="icon flex" onclick="myFunction()" >
+                    <i class="fas fa-align-justify p-3"></i>
+                  </a>
+                </button>
+              </div>
+            <div class="flex text-xs font-light space-x-5 hidden md:flex">
+                <a class="inline-block px-1 py-2" href="https://github.com/sef-global" target="_blank">Github</a>
+                <a class="inline-block px-1 py-2" 
+                   href="https://join.slack.com/t/sefheadquarters/shared_invite/zt-9w6v9rdu-uJGLrMKLTNFzQEVPC4sbOw" 
+                   target="_blank">
+                     Slack
+                </a>
+                <a class="inline-block px-1 py-2" href="https://sef.discourse.group" target="_blank">SEF Hive</a>
+                <a href="https://sef.discourse.group/top?period=yearly" class="inline-flex items-center justify-center  transition-all px-4 py-2 text-center
+                 no-underline align-middle transition-all duration-300 ease-in-out bg-blue-600 border-solid rounded-full 
+                 cursor-pointer select-none">
+                    Best Practices
+                </a>
+            </div>
         </div>
-        <div class="flex text-xs font-light space-x-5">
-            <a class="inline-block px-1 py-2" href="https://github.com/sef-global" target="_blank">Github</a>
-            <a class="inline-block px-1 py-2" 
-               href="https://join.slack.com/t/sefheadquarters/shared_invite/zt-9w6v9rdu-uJGLrMKLTNFzQEVPC4sbOw" 
-               target="_blank">
-                 Slack
-            </a>
-            <a class="inline-block px-1 py-2" href="https://sef.discourse.group" target="_blank">SEF Hive</a>
-            <a href="https://sef.discourse.group/top?period=yearly" class="inline-flex items-center justify-center font-medium transition-all px-4 py-2 text-center
-             no-underline align-middle transition-all duration-300 ease-in-out bg-blue-600 border-solid rounded-full 
-             cursor-pointer select-none">
-                Best Practices
-            </a>
-        </div>
-    </div>
-    <div class="my-5 pt-5 pb-5 md:pb-16">
-        <p class="text-center font-bold text-7xl">
-            Community <span class="text-gray-400">Dev</span>elopers
-        </p>
-    </div>
+         
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden topnav bg-gray-800" id="mobile-menu">
+              
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                  <a href="#" class="bg-gray-900 text-white block px-3 py-2 text-base font-sm" aria-current="page">Github</a>
+            
+                  <a href="#" class="text-gray-300   block px-3 py-2 text-base font-sm">Slack</a>
+            
+                  <a href="#" class="text-gray-300 block px-3 py-2 text-base font-sm">SEF Hive</a>
+            
+                  <a href="#" class="inline-flex items-center justify-center font-sm transition-all px-4 py-2 text-center
+                  no-underline align-middle transition-all duration-300 ease-in-out bg-blue-600 border-solid rounded-full 
+                  cursor-pointer select-none">Best Practices</a>
+                  
+                </div>
+                
+              </div>
+    
+    
+      </nav>
+    
     <div class="grid grid-flow-rows lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 md:my-10" id="wrapper">
         <!-- Developer cards go here -->
     </div>
@@ -97,5 +125,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 <!--JQuery-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!--Font Awesome-->
+<script src="https://kit.fontawesome.com/336a975252.js" crossorigin="anonymous"></script>
+
+<!-- Navbar hamburger funtion-->
+<script>
+function myFunction() {
+  var x = document.getElementById("mobile-menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
 <script src="getDevelopers.js"></script>
 </html>
