@@ -19,7 +19,7 @@
                 <!-- Mobile menu button-->
                 <button type="button" class=" float-right text-gray-400 navbar-toggler d-block d-sm-none" data-toggle="collapse" data-target="#navbarMenu" aria-controls="mobile-menu" aria-expanded="false">
                   <span class="sr-only">Open main menu</span>
-                  <a href="javascript:void(0);" class="icon flex" onclick="hamburgerIcon()" >
+                  <a href="javascript:void(0);" class="icon flex" onclick="ToggleMobileView()" >
                     <i class="fas fa-align-justify p-3"></i>
                   </a>
                 </button>
@@ -39,7 +39,7 @@
                 </a>
             </div>
         </div> 
-            </div>
+            
     
             <!-- Mobile menu, show/hide based on menu state. -->
             <div class="hidden topnav bg-gray-800" id="mobile-menu">
@@ -51,7 +51,7 @@
             
                   <a href="https://sef.discourse.group" class="text-gray-300 block px-3 py-2 text-base font-sm" target="_blank">SEF Hive</a>
             
-                  <a href="https://sef.discourse.group/top?period=yearly" class="inline-flex items-center justify-center font-sm px-4 py-2 text-center
+                  <a href="https://github.com/sef-global/sef-site/blob/master/CONTRIBUTING.md" class="inline-flex items-center justify-center font-sm px-4 py-2 text-center
                   no-underline align-middle transition-all duration-300 ease-in-out bg-blue-600 border-solid rounded-full 
                   cursor-pointer select-none" target="_blank">Best Practices</a>
                   
@@ -162,7 +162,7 @@
 <script src="https://kit.fontawesome.com/336a975252.js" crossorigin="anonymous"></script>
 <!-- Navbar hamburger funtion-->
 <script>
-    function hamburgerIcon() {
+    function ToggleMobileView() {
       var x = document.getElementById("mobile-menu");
       if (x.style.display === "block") {
         x.style.display = "none";
