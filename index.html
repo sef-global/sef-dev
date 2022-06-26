@@ -1,187 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevTeam | Sustainable Education Foundation</title>
     <!-- Favicon -->
-    <link href="images/favicon.png" rel="icon" type="image/png">
+    <link href="images/favicon.png" rel="icon" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="custom-styles.css" />
-</head>
+  </head>
 
-<body class="bg-custom-dark container px-2 md:px-10 mx-auto text-white">
+  <body class="bg-custom-dark container px-2 md:px-10 mx-auto text-white">
     <nav>
-        <div class="flex flex-1 py-3 md:mt-5 md:mx-20 items-center justify-between">
-
-            <div class="flex-initial">
-                <a href="https://dev.sefglobal.org/">
-                    <p class="font-medium text-lg">DevTeam</p>
-                    <p class="text-gray-400 text-sm">Sustainable Education Foundation</p>
-                </a>
-            </div>
-            <div class=" md:hidden">
-                <!-- Mobile menu button-->
-                <button type="button" class=" float-right text-gray-400 navbar-toggler d-block d-sm-none"
-                    data-toggle="collapse" data-target="#navbarMenu" aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <a href="javascript:void(0);" class="icon flex" onclick="ToggleMobileView()">
-                        <i class="fas fa-align-justify p-3"></i>
-                    </a>
-                </button>
-            </div>
-            <div class="flex text-xs font-light space-x-5 hidden md:flex">
-                <a class="inline-block px-1 py-2" href="https://github.com/sef-global" target="_blank">Github</a>
-                <a class="inline-block px-1 py-2"
-                    href="https://join.slack.com/t/sefheadquarters/shared_invite/zt-9w6v9rdu-uJGLrMKLTNFzQEVPC4sbOw"
-                    target="_blank">
-                    Slack
-                </a>
-                <a class="inline-block px-1 py-2" href="https://sef.discourse.group" target="_blank">SEF Hive</a>
-                <a href="https://github.com/sef-global/sef-site/blob/master/CONTRIBUTING.md" class="inline-flex items-center justify-center  px-4 py-2 text-center
-                 no-underline align-middle transition-all duration-300 ease-in-out bg-blue-600 border-solid rounded-full 
-                 cursor-pointer select-none" target="_blank">
-                    Best Practices
-                </a>
-            </div>
+      <div
+        class="flex flex-1 py-3 md:mt-5 md:mx-20 items-center justify-between"
+      >
+        <div class="flex-initial">
+          <a href="https://dev.sefglobal.org/">
+            <p class="font-medium text-lg">DevTeam</p>
+            <p class="text-gray-400 text-sm">
+              Sustainable Education Foundation
+            </p>
+          </a>
         </div>
-
-
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="hidden topnav bg-gray-800" id="mobile-menu">
-
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="https://github.com/sef-global" class="text-gray-300 block px-3 py-2 text-base font-sm"
-                    aria-current="page" target="_blank">Github</a>
-
-                <a href="https://join.slack.com/t/sefheadquarters/shared_invite/zt-9w6v9rdu-uJGLrMKLTNFzQEVPC4sbOw"
-                    class="text-gray-300   block px-3 py-2 text-base font-sm" target="_blank">Slack</a>
-
-                <a href="https://sef.discourse.group" class="text-gray-300 block px-3 py-2 text-base font-sm"
-                    target="_blank">SEF Hive</a>
-
-                <a href="https://github.com/sef-global/sef-site/blob/master/CONTRIBUTING.md" class="inline-flex items-center justify-center font-sm px-4 py-2 text-center
-                  no-underline align-middle transition-all duration-300 ease-in-out bg-blue-600 border-solid rounded-full 
-                  cursor-pointer select-none" target="_blank">Best Practices</a>
-
-            </div>
+        <div class="md:hidden">
+          <!-- Mobile menu button-->
+          <button
+            type="button"
+            class="float-right text-gray-400 navbar-toggler d-block d-sm-none"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <a
+              href="javascript:void(0);"
+              class="icon flex"
+              onclick="ToggleMobileView()"
+            >
+              <i class="fas fa-align-justify p-3"></i>
+            </a>
+          </button>
         </div>
+        <div class="flex text-xs font-light space-x-5 hidden md:flex">
+          <a
+            class="inline-block px-1 py-2"
+            href="https://github.com/sef-global"
+            target="_blank"
+            >Github</a
+          >
+          <a
+            class="inline-block px-1 py-2"
+            href="https://join.slack.com/t/sefheadquarters/shared_invite/zt-9w6v9rdu-uJGLrMKLTNFzQEVPC4sbOw"
+            target="_blank"
+          >
+            Slack
+          </a>
+          <a
+            class="inline-block px-1 py-2"
+            href="https://sef.discourse.group"
+            target="_blank"
+            >SEF Hive</a
+          >
+          <a
+            href="https://github.com/sef-global/sef-site/blob/master/CONTRIBUTING.md"
+            class="inline-flex items-center justify-center px-4 py-2 text-center no-underline align-middle transition-all duration-300 ease-in-out bg-blue-600 border-solid rounded-full cursor-pointer select-none"
+            target="_blank"
+          >
+            Best Practices
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="hidden topnav bg-gray-800" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="https://github.com/sef-global"
+            class="text-gray-300 block px-3 py-2 text-base font-sm"
+            aria-current="page"
+            target="_blank"
+            >Github</a
+          >
+
+          <a
+            href="https://join.slack.com/t/sefheadquarters/shared_invite/zt-9w6v9rdu-uJGLrMKLTNFzQEVPC4sbOw"
+            class="text-gray-300 block px-3 py-2 text-base font-sm"
+            target="_blank"
+            >Slack</a
+          >
+
+          <a
+            href="https://sef.discourse.group"
+            class="text-gray-300 block px-3 py-2 text-base font-sm"
+            target="_blank"
+            >SEF Hive</a
+          >
+
+          <a
+            href="https://github.com/sef-global/sef-site/blob/master/CONTRIBUTING.md"
+            class="inline-flex items-center justify-center font-sm px-4 py-2 text-center no-underline align-middle transition-all duration-300 ease-in-out bg-blue-600 border-solid rounded-full cursor-pointer select-none"
+            target="_blank"
+            >Best Practices</a
+          >
+        </div>
+      </div>
     </nav>
 
     <div class="my-5 pt-5 pb-5 md:pb-16">
-        <p class="text-center font-bold text-7xl">
-            Community <span class="text-gray-400">Dev</span>elopers
-        </p>
+      <p class="text-center font-bold text-7xl">
+        Community <span class="text-gray-400">Dev</span>elopers
+      </p>
     </div>
-    <div class="grid grid-flow-rows lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 md:my-10" id="wrapper">
-        <!-- Developer cards go here -->
+    <div
+      class="grid grid-flow-rows lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 md:my-10"
+      id="wrapper"
+    >
+      <!-- Developer cards go here -->
     </div>
     <div class="my-10 md:my-40 md:mx-20">
-        <div class="flex justify-center">
-            <div class="grid grid-flow-row md:grid-cols-5 gap-5 items-start">
-                <div class="col-span-2 space-y-3">
-                    <div>
-                        <p class=" text-gray-400">Send your</p>
-                        <p class="font-bold text-5xl">Welcome Pull Request</p>
-                        <p class=" text-gray-400">and join SEF open source community</p>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat
-                    </p>
-                    <div class=" space-x-5 text-blue-400 font-light">
-                        <a class="inline-block" href="https://github.com/sef-global/dev-welcome-pr">
-                            dev-welcome-pr repository
-                        </a>
-                        <a class="inline-block" href="https://github.com/sef-global/">
-                            sef-global github
-                        </a>
-                    </div>
-                </div>
-                <div class="col-span-3 rounded-lg text-white bg-white p-5">
-                    <img src="images/WelcomePR.png" />
-                </div>
+      <div class="flex justify-center">
+        <div class="grid grid-flow-row md:grid-cols-5 gap-5 items-start">
+          <div class="col-span-2 space-y-3">
+            <div>
+              <p class="text-gray-400">Send your</p>
+              <p class="font-bold text-5xl">Welcome Pull Request</p>
+              <p class="text-gray-400">and join SEF open source community</p>
             </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat
+            </p>
+            <div class="space-x-5 text-blue-400 font-light">
+              <a
+                class="inline-block"
+                href="https://github.com/sef-global/dev-welcome-pr"
+              >
+                dev-welcome-pr repository
+              </a>
+              <a class="inline-block" href="https://github.com/sef-global/">
+                sef-global github
+              </a>
+            </div>
+          </div>
+          <div class="col-span-3 rounded-lg text-white bg-white p-5">
+            <img src="images/WelcomePR.png" />
+          </div>
         </div>
+      </div>
     </div>
-</body>
-<script type="text/html" id="dev-template">
+  </body>
+  <script type="text/html" id="dev-template">
     {{#data}}
     <a href="{{welcomeThreadEntryUrl}}">
-        <div class="space-y-3 rounded-lg hover:bg-gray-100 hover:text-black p-5">
-            <div class="grid grid-flow-rows md:grid-cols-12">
-                <div class="col-span-1">
-                    <span class="text-6xl text-gray-400 font-bold">"</span>
-                </div>
-                <div class="col-span-11 items-center space-y-3">
-                    <p class="text-3xl"> 
-                        {{quote}}
-                    </p>
-                    <div class="space-x-3">
-                        <img
-                            src="https://sea1.discourse-cdn.com/free1/user_avatar/sef.discourse.group/{{hiveUserName}}/240/7_2.png" 
-                            alt="profile picture"
-                            class="rounded-full w-8 inline-block"
-                        />
-                        <p class="inline-block text-gray-400">{{hiveUserName}} @ SEF Hive</p>
-                    </div>
-                </div>
+      <div class="space-y-3 rounded-lg hover:bg-gray-100 hover:text-black p-5">
+        <div class="grid grid-flow-rows md:grid-cols-12">
+          <div class="col-span-1">
+            <span class="text-6xl text-gray-400 font-bold">"</span>
+          </div>
+          <div class="col-span-11 items-center space-y-3">
+            <p class="text-3xl">{{quote}}</p>
+            <div class="space-x-3">
+              <img
+                src="https://yyz1.discourse-cdn.com/free1/user_avatar/sef.discourse.group/{{hiveUserName}}/240/7_2.png"
+                alt="profile picture"
+                class="rounded-full w-8 inline-block"
+              />
+              <p class="inline-block text-gray-400">
+                {{hiveUserName}} @ SEF Hive
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </a>
     {{/data}}
-</script>
+  </script>
 
-<footer class="pt-10 sm:mt-5">
+  <footer class="pt-10 sm:mt-5">
     <!-- Copyright Bar -->
     <div class="pt-2">
-        <div class="flex pb-5 px-3 m-auto pt-5 
-            border-t border-gray-500 text-white text-md 
-            flex-col md:flex-row max-w-8xl">
-            <div class="mt-1">
-                © Copyright
-                <script> document.write(new Date().getFullYear()) </script>
-                <a href="https://sefglobal.org/" target="_blank">Sustainable Education Foundation</a>
-            </div>
-
-            <!-- Required Unicons (if you want) -->
-            <div class="md:flex-auto text-xl md:flex-row-reverse mt-1 flex-row flex">
-                <a href="https://www.facebook.com/sustainableeducationfoundation" class="w-8 mx-1" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/sefglobal/mycompany/" class="w-8 mx-1" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/sef-global" class="w-8 mx-1" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/sefglobal/" class="w-8 mx-1" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
+      <div
+        class="flex pb-5 px-3 m-auto pt-5 border-t border-gray-500 text-white text-md flex-col md:flex-row max-w-8xl"
+      >
+        <div class="mt-1">
+          © Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          <a href="https://sefglobal.org/" target="_blank"
+            >Sustainable Education Foundation</a
+          >
         </div>
-    </div>
-</footer>
-<!--Mustache.js-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
-<!--JQuery-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!--Font Awesome-->
-<script src="https://kit.fontawesome.com/336a975252.js" crossorigin="anonymous"></script>
-<!-- Navbar hamburger funtion-->
-<script>
-    function ToggleMobileView() {
-        var x = document.getElementById("mobile-menu");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>
-<script src="getDevelopers.js"></script>
 
+        <!-- Required Unicons (if you want) -->
+        <div
+          class="md:flex-auto text-xl md:flex-row-reverse mt-1 flex-row flex"
+        >
+          <a
+            href="https://www.facebook.com/sustainableeducationfoundation"
+            class="w-8 mx-1"
+            target="_blank"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/sefglobal/mycompany/"
+            class="w-8 mx-1"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/sef-global"
+            class="w-8 mx-1"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/sefglobal/"
+            class="w-8 mx-1"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Mustache.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+  <!--JQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--Font Awesome-->
+  <script
+    src="https://kit.fontawesome.com/336a975252.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Navbar hamburger funtion-->
+  <script>
+    function ToggleMobileView() {
+      var x = document.getElementById("mobile-menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <script src="getDevelopers.js"></script>
 </html>
