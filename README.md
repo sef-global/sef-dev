@@ -1,12 +1,31 @@
 # sef-dev
 
+This repository contains source for Sustainable Education Foundation Dev Page. [View Website](https://dev.sefglobal.org/)
+
+## SEF Group Pages and Other Projects 
+
+* Discourse: https://sef.discourse.group/
+* Leaderboard: https://sef-github-leaderboard.herokuapp.com
+* Slack channel: https://sefheadquarters.slack.com 
+* Our Projects 
+    * Core: https://github.com/sef-global/sef-core
+    * Academix
+        * Backend: https://github.com/sef-global/sef-core
+        * Frontend: https://github.com/sef-global/academix-frontend
+    * ScholarX
+        * Backend: https://github.com/sef-global/scholarx
+        * Frontend: https://github.com/sef-global/scholarx-frontend
+
+
 ## Contribution
 
 #### Want to contribute to this project? 
 
 **Send us a Pull Request**
 
-Read: [Development Best Practices at SEF](CONTRIBUTING.md)
+Read: [Development Best Practices at SEF](https://github.com/sef-global/sef-site/blob/master/CONTRIBUTING.md)
+
+
 ## Prerequisites
 * [Node.js](https://nodejs.org/en/)
 * [npm](https://www.npmjs.com/)
@@ -42,4 +61,3 @@ Read: [Development Best Practices at SEF](CONTRIBUTING.md)
 
 Sustainable Education Foundation
 
-Developed using theme Argon by Creative tim
