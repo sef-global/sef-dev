@@ -6,7 +6,7 @@
 
 **Send us a Pull Request**
 
-Read: [Development Best Practices at SEF](CONTRIBUTING.md)
+Read: [Development Best Practices at SEF](https://github.com/sef-global/sef-site/blob/master/CONTRIBUTING.md)
 ## Prerequisites
 * [Node.js](https://nodejs.org/en/)
 * [npm](https://www.npmjs.com/)
@@ -42,4 +42,3 @@ Read: [Development Best Practices at SEF](CONTRIBUTING.md)
 
 Sustainable Education Foundation
 
-Developed using theme Argon by Creative tim
