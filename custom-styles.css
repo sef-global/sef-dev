@@ -11,17 +11,3 @@
     padding: 15px;
     border-radius: 5px;
 }
-
-@media only screen and (max-width: 767px) {
-    .footer-icons {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .footer-text {
-        text-align: center;
-    }
-}
-    
-
